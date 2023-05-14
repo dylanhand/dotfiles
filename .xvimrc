@@ -1,0 +1,36 @@
+" mash j and k to quickly get out of insert mode
+imap jk <Esc>
+imap kj <Esc>
+imap uu _
+map <Enter> o<ESC>
+
+set noexpandtab
+
+" ignore case while searching
+set ignorecase
+
+" don't ignore case if caps are used in search
+set smartcase
+
+" show relative line numbers, but display the actual number of current line
+set relativenumber
+set number
+
+" , = leader. `let mapleader` wasn't working here
+" let mapleader=","   "this doesn't appear to work with xvim
+" nmap , <Leader> " this caused problems with using an invalid command
+
+nmap ,f :xcmenucmd Find Selected Text in Workspace<cr>
+nmap ,d :xcmenucmd Search Documentation for Selected Text<cr>
+nmap ,b :xcmenucmd Add Breakpoint at Current Line<cr>
+nmap ,s :xcmenucmd Save<cr>
+
+" hide the navigator, utilities, and debug area
+" 'show' is confusing - it toggles visibility of an area. so first make each visible,
+" then toggle it off
+nmap ,h :xcmenucmd Show Project Navigator<cr> :xcmenucmd Show File Inspector<cr> :xcmenucmd Show Navigator<cr> :xcmenucmd Show Utilities<cr>
+":xcmenucmd Activate Console<cr> :xcmenucmd Show Debug Area<cr>
+
+" auto-indent code block after 'put'
+" nnoremap p p=i} 
+" nnoremap P P=i}
