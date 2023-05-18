@@ -78,6 +78,9 @@ alias l="lsd -l"
 alias la="lsd -la"
 alias o='a -e open'
 
+# Empty commit
+alias gcame="git commit --allow-empty -m"
+
 # Editor
 EDITOR=nvim
 alias vim=nvim
