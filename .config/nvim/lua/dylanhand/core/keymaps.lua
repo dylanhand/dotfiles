@@ -15,8 +15,26 @@ keymap.set("i", "uu", "_")
 -- clear highlighted search results
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+-- move visual blocks
+keymap.set("v", "J", ":move '>+1<CR>gv=gv")
+keymap.set("v", "K", ":move '<-2<CR>gv=gv")
+
+-- keep cursor in place
+keymap.set("n", "J", "mzJ`z")
+
+-- stay centered when scrolling by half page
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- stay centered when navigating search terms
+keymap.set("n", "n", "nzz")
+keymap.set("n", "N", "Nzz")
+
 -- don't copy deleted character to register
 keymap.set("n", "x", '"_x')
+
+-- don't lose yank when pasting in visual mode
+keymap.set("x", "<leader>p", '"_dP')
 
 -- increment & decrement
 keymap.set("n", "<leader>+", "<C-a>")

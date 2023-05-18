@@ -26,6 +26,7 @@ return require('packer').startup(function(use)
   use 'nvim-lua/plenary.nvim'
 
   use 'bluz71/vim-nightfly-guicolors' -- color scheme
+  -- use { "catppuccin/nvim", as = "catppuccin" }
   use 'christoomey/vim-tmux-navigator' -- navigate splits with ctrl-[h,j,k,l]
   use 'szw/vim-maximizer'
   use 'tpope/vim-surround'

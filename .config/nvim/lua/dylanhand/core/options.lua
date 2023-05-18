@@ -13,6 +13,11 @@ opt.autoindent = true
 -- line wrapping
 opt.wrap = false
 
+-- leave buffer at top/bottom when scrolling
+opt.scrolloff = 8
+
+opt.updatetime = 50
+
 -- search settings
 opt.ignorecase = true
 opt.smartcase = true
@@ -37,3 +42,6 @@ opt.splitbelow = true
 
 -- snake case words are words too
 opt.iskeyword:append("-")
+
+-- don't assume new line after comment is also comment
+opt.formatoptions:remove { "c", "r", "o" }
