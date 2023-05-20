@@ -87,7 +87,6 @@ alias vim=nvim
 
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
-eval "$(starship init zsh)"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 export PATH="/usr/local/sbin:$PATH"
