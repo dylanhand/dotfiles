@@ -10,4 +10,4 @@ This repo is set up using a bare repository based on [this article.](https://www
 $ git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 ```
 
-Then, after launching tmux, plugins can be installed with `<leader>I`.
+Then, after launching tmux, plugins can be installed with `<prefix>I`.
