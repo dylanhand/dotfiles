@@ -7,6 +7,9 @@ vim.keymap.set("i", "kj", "<Esc>")
 
 vim.keymap.set("i", "uu", "_")
 
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
 --------------------
 -- PLUGIN KEYMAPS --
 --------------------
