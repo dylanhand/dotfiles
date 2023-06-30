@@ -1,4 +1,18 @@
+local actions = require("telescope.actions")
+
 return {
+  {
+    require("telescope").setup({
+      defaults = {
+        mappings = {
+          i = {
+            ["<esc>"] = actions.close,
+          },
+        },
+      },
+    }),
+  },
+
   {
     "telescope.nvim",
     dependencies = {
