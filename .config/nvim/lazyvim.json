@@ -1,10 +1,12 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.ai.copilot",
     "lazyvim.plugins.extras.lang.markdown"
   ],
   "news": {
     "NEWS.md": "7429"
   },
-  "version": 7
+  "version": 7,
+  "_comment" : {
+    "add this to 'extras' above to re-enable copilot": "lazyvim.plugins.extras.ai.copilot"
+  }
 }
