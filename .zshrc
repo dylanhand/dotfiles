@@ -21,10 +21,6 @@ deleteDerivedData() {
   echo "Successfully deleted Derived Data folder"
 }
 
-# Ruby
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-chruby ruby-3.1.2
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -111,3 +107,5 @@ source <(fzf --zsh)
 
 # Init zoxide
 eval "$(zoxide init --cmd j zsh)"
+
+eval "$(rbenv init - --no-rehash zsh)"
