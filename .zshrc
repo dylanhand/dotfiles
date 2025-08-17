@@ -95,9 +95,15 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
 export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 
+export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
+
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 export PATH="/usr/local/sbin:$PATH"
+
+# Android
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -107,5 +113,7 @@ source <(fzf --zsh)
 
 # Init zoxide
 eval "$(zoxide init --cmd j zsh)"
+. "/Users/dylanhand/.deno/env"
+alias claude="/Users/dylanhand/.claude/local/claude"
 
 eval "$(rbenv init - --no-rehash zsh)"
