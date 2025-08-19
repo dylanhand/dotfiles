@@ -3,6 +3,7 @@
     "add this to 'extras' above to re-enable copilot": "lazyvim.plugins.extras.ai.copilot"
   },
   "extras": [
+    "lazyvim.plugins.extras.coding.mini-surround",
     "lazyvim.plugins.extras.lang.markdown"
   ],
   "install_version": 7,
