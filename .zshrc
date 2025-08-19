@@ -86,6 +86,8 @@ alias gcame="git commit --allow-empty -m"
 
 alias lg="lazygit"
 
+alias ff="aerospace list-windows --all | fzf --bind 'enter:execute(bash -c \"aerospace focus --window-id {1}\")+abort'"
+
 # Editor
 EDITOR=nvim
 alias vim=nvim
