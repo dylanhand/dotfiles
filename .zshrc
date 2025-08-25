@@ -1,4 +1,5 @@
-source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
+# Uncomment this and `zprof` at end of file to profile slow start up
+# zmodload zsh/zprof
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -6,6 +7,8 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -65,7 +68,14 @@ export PATH="/opt/homebrew/opt/icu4c/sbin:$PATH"
 export PATH="/opt/homebrew/opt/make/libexec/gnubin:$PATH"
 
 export PATH="$HOME/.jenv/bin:$PATH"
-eval "$(jenv init -)"
+
+# Lazy load jenv only when needed
+jenv() {
+  unfunction jenv
+  eval "$(command jenv init - zsh)"
+  jenv "$@"
+}
+
 export PATH="/usr/local/sbin:$PATH"
 
 # Android
@@ -90,3 +100,5 @@ ZVM_CURSOR_STYLE_ENABLED=false
 
 # Terminal syntax highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# zprof
