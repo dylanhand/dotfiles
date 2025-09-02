@@ -34,10 +34,14 @@ setopt autocd
 
 # Case insensitive tab completion
 autoload -Uz compinit && compinit
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+
+# Fuzzy matching. Will match parts of filenames, not just beginning of filenames.
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' 'r:|?=** m:{a-z\-}={A-Z\_}'
 
 # Highlight tab completion options while cycling
 zstyle ':completion:*' menu select
+
+alias c="clear"
 
 # Files
 alias ls="lsd"
@@ -50,6 +54,7 @@ alias .....="cd ../../../.."
 
 # Empty commit
 alias gcame="git commit --allow-empty -m"
+alias gd="git diff"
 
 alias lg="lazygit"
 
