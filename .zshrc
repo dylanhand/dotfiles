@@ -15,9 +15,8 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 alias go="jump" # expected bashmarks behavior
 alias srv="bundle exec jekyll serve --livereload"
-alias boink="~/cl/etc/boink.sh"
-alias dweet="~/Projects/dylan.wtf/scripts/new-post.swift"
 alias ddd="deleteDerivedData"
+alias c="clear"
 
 # TODO: move this to separate file
 deleteDerivedData() {
@@ -37,8 +36,6 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' 'r:|=*' 'l:|=* r:|=*' 'r:
 
 # Highlight tab completion options while cycling
 zstyle ':completion:*' menu select
-
-alias c="clear"
 
 # Files
 alias ls="lsd"
