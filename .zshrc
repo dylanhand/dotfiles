@@ -26,9 +26,6 @@ deleteDerivedData() {
   echo "Successfully deleted Derived Data folder"
 }
 
-# Dotfiles
-alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
-
 # `cd` by entering name of dir
 setopt autocd
 
