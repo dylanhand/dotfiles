@@ -93,10 +93,6 @@ source <(fzf --zsh)
 # Init zoxide
 eval "$(zoxide init --cmd j zsh)"
 
-. "/Users/dylanhand/.deno/env"
-
-alias claude="/Users/dylanhand/.claude/local/claude"
-
 eval "$(rbenv init - --no-rehash zsh)"
 
 # Terminal vim mode
