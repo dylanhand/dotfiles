@@ -7,7 +7,7 @@ alt - g : open /Applications/Fork.app
 alt - j : open /Applications/Logic\ Pro\ X.app
 alt - k : open /Applications/Visual\ Studio\ Code.app
 alt - h : open /Applications/Toggl\ Track.app
-alt - l : open /Applications/iTerm.app
+alt - l : open /Applications/WezTerm.app
 alt - w : open /Applications/WhatsApp.app
 alt - e : open ~/Applications/Gmail.app
 alt - t : open /Applications/Things3.app
