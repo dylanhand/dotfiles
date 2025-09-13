@@ -61,6 +61,7 @@ EDITOR=nvim
 alias vim=nvim
 alias v=nvim
 
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 export PATH="/opt/homebrew/opt/icu4c/bin:$PATH"
