@@ -45,9 +45,12 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Empty commit
+# Git
 alias gcame="git commit --allow-empty -m"
-alias gd="git diff"
+alias gp="git push"
+alias gl="git pull"
+alias gst="git status"
+alias gst="git status"
 
 alias lg="lazygit"
 
