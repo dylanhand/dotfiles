@@ -51,6 +51,7 @@ alias gp="git push"
 alias gl="git pull"
 alias gst="git status"
 alias gst="git status"
+alias gd="git diff"
 
 alias lg="lazygit"
 
